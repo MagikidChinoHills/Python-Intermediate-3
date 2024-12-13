@@ -1,0 +1,26 @@
+Homework 1
+
+1. Draw a Triangle: Write a Python program using the Turtle library to draw an equilateral triangle. 
+Each side of the triangle should be 100 units long.
+
+
+2. Modify the Pentagon: Modify the draw_polygon function to draw a hexagon (6 sides) instead of a pentagon. 
+Each side of the hexagon should be 80 units long.
+
+
+3. Draw and Fill a Rectangle: Write a Python program to draw a rectangle with a width of 150 units and a height of 75 units. 
+The rectangle should be filled with the color blue.
+
+
+4. Draw and Fill a Star: Write a Python program to draw a star with 5 points. 
+Each side of the star should be 100 units long, and the star should be filled with the color red.
+
+
+5. Create a Circle: Modify your program to draw a circle with a radius of 100 units. 
+You should use the circle(radius) method provided by the Turtle library.
+
+
+Additional Tips:
+- Utilize online resources, Python documentation, and course materials to reinforce your understanding.
+- Collaborate with classmates to discuss concepts and problem-solving.
+- Seek assistance from your instructor or classmates if you encounter difficulties.
