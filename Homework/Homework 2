@@ -1,0 +1,28 @@
+Homework 3
+
+Problem 1: Draw a Spiral
+- Write a program that uses Turtle to draw a spiral. 
+  The spiral should start with a small line and gradually increase in length.
+
+
+Problem 2: Draw a Diamond Pattern
+- Create a program that draws a diamond pattern. 
+  Each diamond should be made up of four triangles.
+
+
+Problem 3: Draw a Heart Shape
+- Write a program to draw a simple heart shape using Turtle.
+
+
+Problem 4: Create a Flower Pattern
+- Write a program that draws a flower pattern using Turtle.
+
+
+Problem 5: Recursive Squares with Color
+- Create a recursive pattern using squares where each successive square is smaller and drawn in a different color.
+
+
+Additional Tips:
+- Utilize online resources, Python documentation, and course materials to reinforce your understanding.
+- Collaborate with classmates to discuss concepts and problem-solving.
+- Seek assistance from your instructor or classmates if you encounter difficulties.
