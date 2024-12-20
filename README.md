@@ -13,3 +13,4 @@ Alisa
 Lessons Completed:
 
 Lesson 1
+Lesson 2
