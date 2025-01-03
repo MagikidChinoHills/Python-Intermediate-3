@@ -109,8 +109,8 @@ for step in range(1080):
 turtle.done()
 '''
 
-'''
 # Draw a diamond (Homework question)
+'''
 t = turtle.Turtle()
 
 # Draw the diamond
@@ -126,8 +126,8 @@ t.forward(100)  # Draw the fourth side
 turtle.done()
 '''
 
-'''
 # Draw a heart (Homework question)
+'''
 t = turtle.Turtle()
 
 t.color("red")
