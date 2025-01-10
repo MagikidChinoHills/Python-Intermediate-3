@@ -1,0 +1,35 @@
+Homework 4
+
+Problem 1: Draw a Hexagon and Fill It with Color
+- Write a function to draw a hexagon with each side measuring 80 units.
+- Fill the hexagon with a color of your choice.
+
+
+Problem 2: Create a Mandala Design
+- Write a function to draw a mandala-like design consisting of concentric circles.
+- Start with a circle of radius 50 units and draw 10 circles, each circle’s radius increasing by 10 units.
+- Arrange the circles so they are centered around the same point.
+
+
+Problem 3: Animate a Spinning Triangle
+- Write a program that animates a triangle spinning around its center.
+- The triangle should have sides of 100 units and should spin 360 degrees in 30 steps, with a slight delay between each step.
+
+
+Problem 4: Draw a Nested Square Pattern
+- Write a function to draw a pattern of nested squares.
+- Start with a square of side 50 units and draw 10 squares, each square being 10 units larger in side length than the previous one.
+- Ensure that all squares are centered around the same point.
+
+
+
+Problem 5: Draw a Complex Fractal Pattern:
+- Use recursion to draw a fractal pattern with a set of smaller triangles recursively.
+- Start with an equilateral triangle and recursively draw smaller triangles inside it.
+- Set the depth of recursion to 3 for a detailed pattern.
+
+  
+Additional Tips:
+- Utilize online resources, Python documentation, and course materials to reinforce your understanding.
+- Collaborate with classmates to discuss concepts and problem-solving.
+- Seek assistance from your instructor or classmates if you encounter difficulties.
