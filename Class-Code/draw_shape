@@ -1,0 +1,32 @@
+def draw_shape(shape, area):
+    canvas.delete("all")
+    color = get_color_from_area(area)
+    canvas_width = canvas.winfo_width()
+    canvas_height = canvas.winfo_height()
+    max_dim = min(canvas_width, canvas_height) * 0.4  # Max dimension to ensure it fits well
+    if shape == "Circle":
+        radius = float(entry1.get())
+        scale = max_dim / (2 * radius)
+        animate_circle(canvas_width / 2, canvas_height / 2, radius * scale, color, radius)
+    elif shape == "Square":
+        side = float(entry1.get())
+        scale = max_dim / side
+        animate_square(canvas_width / 2, canvas_height / 2, side * scale, color, side)
+    elif shape == "Rectangle":
+        width = float(entry1.get())
+        height = float(entry2.get())
+        scale = max_dim / max(width, height)
+        animate_rectangle(canvas_width / 2, canvas_height / 2, width * scale, height * scale, color, width, height)
+    elif shape == "Triangle":
+        base = float(entry1.get())
+        height = float(entry2.get())
+        scale = max_dim / max(base, height)
+        animate_triangle(canvas_width / 2, canvas_height / 2, base * scale, height * scale, color, base, height)
+    elif shape == "Pentagon":
+        side = float(entry1.get())
+        scale = max_dim / side
+        animate_pentagon(canvas_width / 2, canvas_height / 2, side * scale, color, side)
+    elif shape == "Hexagon":
+        side = float(entry1.get())
+        scale = max_dim / side
+        animate_hexagon(canvas_width / 2, canvas_height / 2, side * scale, color, side)
