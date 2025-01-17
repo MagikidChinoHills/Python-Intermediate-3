@@ -1,3 +1,24 @@
+def get_color_from_area(area):
+    # Function to determine color based on area size
+    if area < 50:
+        return "green"
+    elif area < 100:
+        return "blue"
+    elif area < 200:
+        return "yellow"
+    else:
+        return "red"
+
+def animate_circle(x, y, r, color, original_radius):
+    steps = 100
+    for i in range(steps + 1):
+        canvas.delete("all")
+        radius = r * i / steps
+        canvas.create_oval(x - radius, y - radius, x + radius, y + radius, fill=color)
+        canvas.update()
+        time.sleep(0.01)
+    canvas.create_text(x, y + r + 20, text=f"Radius = {original_radius}", fill="black")
+
 def animate_square(x, y, s, color, original_side):
     steps = 100
     for i in range(steps + 1):
