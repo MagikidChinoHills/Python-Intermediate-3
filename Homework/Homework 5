@@ -1,0 +1,21 @@
+Homework 5
+
+Problem 1: Add a New Shape
+- Modify the existing code to add a new shape: Octagon.
+- Update the shape_var options and calculate_area function to handle this new shape.
+- Ensure that the drawing function (animate_octagon) is implemented to animate the octagon similarly to the other shapes.
+
+
+Problem 2: Add a Custom Color Option:
+- Modify the code to allow users to select a custom color for the shape instead of automatically choosing one based on the area.
+- Add a new text entry or color picker to the GUI where users can input a color name or hex code.
+
+
+Problem 3: Comment your code
+- Comment each line of your code explaining what it means/does. 
+
+  
+Additional Tips:
+- Utilize online resources, Python documentation, and course materials to reinforce your understanding.
+- Collaborate with classmates to discuss concepts and problem-solving.
+- Seek assistance from your instructor or classmates if you encounter difficulties.
