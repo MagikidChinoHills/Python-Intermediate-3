@@ -1,0 +1,40 @@
+Homework 6
+
+Problem 1: Move Multiple Shapes (Create a Tkinter application that moves two rectangles across the canvas)
+- Create a canvas widget.
+- Create two rectangles with different colors and sizes.
+- Move the rectangles in different directions: one moves right, and the other moves left.
+- Use the after method to continuously move the rectangles.
+
+
+Problem 2: Implement Paddle Movement with Boundaries
+- Modify the Pong game to ensure the paddles cannot move outside the canvas boundaries.
+- Add boundary checks to prevent the paddles from moving beyond the top or bottom edges of the canvas.
+  Hints:
+  - Check the position of each paddle before moving it.
+  - Ensure the paddle stays within the canvas height.
+
+
+Problem 3: Change Ball Speed with a Button
+- Add a button to change the ball's speed in the Pong game when clicked.
+  Hint:
+  - Use a global variable to adjust the ball's speed.
+
+
+Problem 4: Add a Score Display
+- Add a score display to the Pong game that updates when the ball hits the left or right edge of the canvas.
+- Create a label to display the scores for both players.
+  Hint:
+  - Update the score in the move_ball function when the ball hits the edges.
+
+
+Problem 5: Create a Pause Button
+- Add a button to pause and resume the Pong game.
+  Hint: 
+  - Use a global variable to track the game's state.
+
+  
+Additional Tips:
+- Utilize online resources, Python documentation, and course materials to reinforce your understanding.
+- Collaborate with classmates to discuss concepts and problem-solving.
+- Seek assistance from your instructor or classmates if you encounter difficulties.
