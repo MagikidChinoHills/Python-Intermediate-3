@@ -1,0 +1,34 @@
+Homework: Enhancing Your Tkinter To-Do List Application
+
+Problem 1: Add a Task Counter
+Instructions:
+- Add a label to the GUI that shows the total number of tasks in the listbox.
+- Update this label each time a task is added or removed.
+Hints:
+- Create a label with a descriptive text, such as "Total Tasks: 0".
+- Update this label in the add_task() and remove_task() functions.
+
+
+Problem 2: Change Task Status
+Instructions:
+- Add a new button labeled "Toggle Task Status" in the GUI.
+- When this button is clicked, if a task is selected in the listbox, toggle its status between completed and uncompleted.
+- Ensure the listbox and status labels are updated to reflect the change.
+Hints:
+- Use the mark_task_completed() function as a reference to modify the status.
+- Check if the task is already completed, then set it to uncompleted if it is, and vice versa.
+
+
+Problem 3: Task Entry Validation
+Instructions:
+- Modify the add_task() function to ensure that the task entry is not just whitespace.
+- If the entry is only spaces or empty, display a warning message to the user.
+Hints:
+- Use the strip() method on the task entry to check for whitespace.
+- Display the warning using messagebox.showwarning() if the task is invalid.
+
+  
+Additional Tips:
+- Utilize online resources, Python documentation, and course materials to reinforce your understanding.
+- Collaborate with classmates to discuss concepts and problem-solving.
+- Seek assistance from your instructor or classmates if you encounter difficulties.
