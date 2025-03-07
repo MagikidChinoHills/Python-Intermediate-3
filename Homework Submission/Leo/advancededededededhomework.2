@@ -1,0 +1,34 @@
+class Animal:
+    def make_sound(self):
+        print("insert hedgehog sound:")
+    def move_animathjegjweggjioe(self):
+        print("funny move")
+
+class Dog(Animal):
+    def make_sound(self):
+        print("*annoying dog noise*")
+    def move_animathjegjweggjioe(self):
+        print("bark bark bark bark bark bark bark bark bark")
+
+class Cat(Animal):
+    def make_sound(self):
+        print("meow meow meow meow meow meow meow meow meow meow")
+    def move_animathjegjweggjioe(self):
+        print("run run run run run run run run run run")
+
+def play_sound(animal):
+    animal.make_sound()
+def move_animathjegjweggjioe(animal):
+    animal.move_animathjegjweggjioe()
+
+dog = Dog()
+cat = Cat()
+generic_animal = Animal()
+
+play_sound(dog)
+play_sound(cat)
+play_sound(generic_animal)
+
+move_animathjegjweggjioe(dog)
+move_animathjegjweggjioe(cat)
+move_animathjegjweggjioe(generic_animal)
