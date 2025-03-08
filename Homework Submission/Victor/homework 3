@@ -1,0 +1,137 @@
+from abc import ABC, abstractmethod
+
+# Problem 1: Encapsulation and Getter/Setter Methods
+
+class BankAccount:
+    def __init__(self, account_number, balance):
+        self.account_number = account_number
+        self.__balance = balance  # Making balance private (encapsulation)
+
+    # Getter method for balance
+    def get_balance(self):
+        return self.__balance
+
+    # Setter method for balance
+    def set_balance(self, balance):
+        if balance >= 0:
+            self.__balance = balance
+        else:
+            print("Balance cannot be negative.")
+
+    # Withdraw method to update balance
+    def withdraw(self, amount):
+        if amount <= self.__balance:
+            self.__balance -= amount
+            print(f"Withdrawal successful! Remaining balance: {self.__balance}")
+        else:
+            print("Insufficient balance.")
+
+
+# Problem 2: Abstraction and Abstract Class
+
+# Abstract class for Vehicle
+class Vehicle(ABC):
+    
+    @abstractmethod
+    def start_engine(self):
+        pass
+    
+    @abstractmethod
+    def stop_engine(self):
+        pass
+    
+    @abstractmethod
+    def drive(self):
+        pass
+
+
+# Concrete class for Car inheriting from Vehicle
+class Car(Vehicle):
+    
+    def start_engine(self):
+        print("The car engine has started.")
+    
+    def stop_engine(self):
+        print("The car engine has stopped.")
+    
+    def drive(self):
+        print("The car is now driving.")
+
+
+# Problem 3: Application of Encapsulation and Abstraction
+
+# Abstract class for Library
+class Library(ABC):
+
+    @abstractmethod
+    def add_book(self, book):
+        pass
+
+    @abstractmethod
+    def remove_book(self, book):
+        pass
+
+    @abstractmethod
+    def display_books(self):
+        pass
+
+
+# Concrete class for MyLibrary
+class MyLibrary(Library):
+    def __init__(self):
+        self.__books = []  # Encapsulated list of books
+
+    def add_book(self, book):
+        self.__books.append(book)
+        print(f"Book '{book.title}' added.")
+
+    def remove_book(self, book):
+        if book in self.__books:
+            self.__books.remove(book)
+            print(f"Book '{book.title}' removed.")
+        else:
+            print(f"Book '{book.title}' not found.")
+
+    def display_books(self):
+        if self.__books:
+            print("Books in the library:")
+            for book in self.__books:
+                print(f"{book.title} by {book.author}")
+        else:
+            print("No books in the library.")
+
+# Class representing a book
+class Book:
+    def __init__(self, title, author):
+        self.title = title
+        self.author = author
+
+
+# Main program
+
+# 1. Encapsulation example with BankAccount
+print("\n--- Bank Account Example ---")
+account = BankAccount("12345678", 1000.0)
+print(f"Initial Balance: {account.get_balance()}")
+account.set_balance(1500.0)
+print(f"Updated Balance: {account.get_balance()}")
+account.withdraw(500.0)
+
+# 2. Abstraction example with Vehicle and Car
+print("\n--- Vehicle Example ---")
+my_car = Car()
+my_car.start_engine()
+my_car.stop_engine()
+my_car.drive()
+
+# 3. Application of Encapsulation and Abstraction in Library Management
+print("\n--- Library Management Example ---")
+library = MyLibrary()
+book1 = Book("The Great Gatsby", "F. Scott Fitzgerald")
+book2 = Book("1984", "George Orwell")
+
+library.add_book(book1)
+library.add_book(book2)
+library.display_books()
+library.remove_book(book1)
+library.display_books()
