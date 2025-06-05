@@ -1,0 +1,84 @@
+import random
+
+options = ["rock", "paper", "scissors", "spock", "lizard"]
+
+user_win_messages = [
+    "Nice! You crushed it!",
+    "You're unstoppable!",
+    "Victory is yours!",
+    "Boom! That was slick!",
+    "You win this round, champion!"
+]
+
+computer_win_messages = [
+    "Ouch! Computer got lucky!",
+    "The machine strikes back!",
+    "Better luck next time!",
+    "Computer wins this one!",
+    "Too bad, computer outplayed you!"
+]
+
+def get_user_choice():
+    while True:
+        choice = input("Enter your choice (rock, paper, scissors, spock, lizard): ").lower().strip()
+        if choice in options:
+            return choice
+        else:
+            print("WRONG CHOICE")
+
+def get_computer_choice():
+    return random.choice(options)
+
+def determine_winner(user, computer):
+    if user == computer:
+        return "tie"
+    elif (user == "rock" and computer == "scissors") or \
+         (user == "paper" and computer == "rock") or \
+         (user == "scissors" and computer == "paper") or \
+         (user == "rock" and computer == "lizard") or \
+         (user == "lizard" and computer == "spock") or \
+         (user == "spock" and computer == "scissors") or \
+         (user == "spock" and computer == "rock") or \
+         (user == "lizard" and computer == "paper") or \
+         (user == "scissors" and computer == "lizard") or \
+         (user == "paper" and computer == "spock"):  
+        return "user win"
+    else:
+        return "computer win"
+
+def display_result(user, computer, winner):
+    print(f"\nYou chose {user}")
+    print(f"Computer chose {computer}")
+    if winner == "tie":
+        print("It's a tie!")
+    elif winner == "user win":
+        print(random.choice(user_win_messages))
+    else:
+        print(random.choice(computer_win_messages))
+
+def play_game():
+    user_score = 0
+    computer_score = 0
+
+    print("Welcome to Rock, Paper, Scissors, Spock, Lizard!")
+    print("Rules: Rock crushes Scissors, Scissors cuts Paper, Paper covers Rock, Rock crushes Lizard, Lizard poisons Spock, Spock smashes Scissors, Scissors decapitates Lizard, Lizard eats Paper, Paper disproves Spock, Spock vaporizes Rock.")
+
+    while True:
+        user_choice = get_user_choice()
+        computer_choice = get_computer_choice()
+        result = determine_winner(user_choice, computer_choice)
+
+        if result == "user win":
+            user_score += 1
+        elif result == "computer win":
+            computer_score += 1
+
+        display_result(user_choice, computer_choice, result)
+        print(f"Score - You: {user_score}, Computer: {computer_score}")
+        
+        play_again = input("Do you want to play again? (yes/no): ").lower().strip()
+        if play_again != "yes":
+            print("Thanks for playing!")
+            break
+
+play_game()
