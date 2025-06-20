@@ -1,0 +1,26 @@
+#1
+def apple(a, b, c):
+    print(a)
+    print(b)
+    print(c)
+apple(20, 40, 60)
+#2
+def apple1(a, b):
+    print(f"Name: {a}")
+    print(f"Salary: {b}")
+apple1("ben", 12000)
+#3.
+def apple2(a,  b, c):
+    print (max(a, b, c))
+apple2(1, 2, 3)
+#4.
+def apple3(s):
+    print(s[::-1])
+apple3("ergknkwkgkwlf189238912u31jdqjwjdw")
+#5
+def appler(sentence):
+    words = sentence.split()
+    longest = max(words, key=len)
+    return longest
+
+print(appler("the qucuj brnr foex humpre veoir th3e vlazy dog"))
