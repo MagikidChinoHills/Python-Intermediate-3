@@ -1,0 +1,22 @@
+Some terms for you to review:
+- language: tool to communicate
+- natural language: language that humans use (English, German, French, Spanish, etc)
+- programming language: language humans created to communicate with computers
+- high-level programming language: higheer level of programming language so that humans can ingore the physical details of the computer's hardware (structure) suchas as the CPU type (brain), memory size, and organization
+- machine language: lowest level of programming language; a sequence of bits (binary digits) that forces the CPU to execute desired operations
+- instruction list (IL): list of instrucitons used for list operations based on the CPU structure (ex: x86 and arm)
+- source code: text enconced in the programming language
+  - .py contains Python source code
+  - .cpp contains C++ source code
+- lexis: like a dictionary that has many words; set of words the language offers
+- syntax: determine if a certain sequence of words forms a valid sentence
+- semantics: a set of ruler that settles if a phrase or sentence makes sense in a given language
+- compilation: the process of translating the source code at once and creates a new file for it
+- compiler: the program in charge of doing the compilation
+- interpretation: the process of translating and running the code line by line, without creating a separate file
+- interpreter: the program in charge of doing the interpretation
+- Python is an interpreted programming language
+- C++ is a compiled programming language
+- PSF: Python Software Foundation (sometimes referred as CPython)
+  - uses C programming language to create the interpreter and environment for Python
+- literal: when the data type of the variable is determined by the stored data itself
